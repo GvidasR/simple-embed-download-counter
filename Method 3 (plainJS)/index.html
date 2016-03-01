@@ -1,0 +1,15 @@
+<a href="randomStuff.txt" target=_blank onclick="increase()">Download(<span id="counter"></span>)</a>
+<script>
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status == 200) {
+		document.getElementById("counter").innerHTML = xhttp.responseText;
+		}
+	};
+	xhttp.open("GET", "/counter.php", true);
+	xhttp.send();
+	function increase(){
+		xhttp.open("POST", "/counter.php", true);
+		xhttp.send();
+	}
+</script>

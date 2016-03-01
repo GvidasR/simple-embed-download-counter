@@ -9,3 +9,6 @@ Usage:
 
 ###### Method 2 - jQuery
 Allows you to embed link with small proportion of jQuery code to use download counter
+
+###### Method 3 - plain JavaScript
+Allows you to embed link with small proportion of plain javascript code to use same `counter.php` as in method 2

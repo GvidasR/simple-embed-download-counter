@@ -1,0 +1,5 @@
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
+	$(document).ready(function(){$('.inc-counter span').load('/counter.php');$('.inc-counter').click(function(){$.post({url: "/counter.php"});$('.inc-counter span').text(parseInt($('.inc-counter span').text())+1);});});
+</script>
+<a href="randomStuff.txt" target=_blank class="inc-counter">Download (<span></span>)</a>

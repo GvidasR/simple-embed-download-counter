@@ -6,3 +6,6 @@ Allows you to embed iframe with this script and have download link with global d
 
 Usage:
 `<iframe src="counter.php" width="200" height="35" frameBorder="0"/>`
+
+###### Method 2 - jQuery
+Allows you to embed link with small proportion of jQuery code to use download counter
